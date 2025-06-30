@@ -1,5 +1,6 @@
 // Definindo um "molde" para os nossos dados de usuário com TypeScript
 // Isso nos ajuda a evitar erros e ter autocomplete no código.
+import AddUserForms from "@/components/AddUserForm";
 type User = {
   id: number;
   email: string;
@@ -28,6 +29,7 @@ export default async function Home() {
 
   return (
     <main>
+      <AddUserForms />
       <h1 className="text-4xl font-bold text-purple-400 mb-8">
         Dashboard de Usuários
       </h1>
